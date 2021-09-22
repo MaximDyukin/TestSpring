@@ -1,0 +1,6 @@
+framework module Pods_TestSpring {
+  umbrella header "Pods-TestSpring-umbrella.h"
+
+  export *
+  module * { export * }
+}
