@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5F1E4F74DE6179ECE83A18B /* Pods_TestSpring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626298509F5CC2EA867C033D /* Pods_TestSpring.framework */; };
+		EE19DBFB26FB547C00749BFB /* AnimationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19DBFA26FB547C00749BFB /* AnimationSettings.swift */; };
 		EEC644F026FB2BD600D18306 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC644EF26FB2BD600D18306 /* AppDelegate.swift */; };
 		EEC644F226FB2BD600D18306 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC644F126FB2BD600D18306 /* SceneDelegate.swift */; };
 		EEC644F426FB2BD600D18306 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC644F326FB2BD600D18306 /* ViewController.swift */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17D36CEB3AC03850B6A6BB78 /* Pods-TestSpring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSpring.debug.xcconfig"; path = "Target Support Files/Pods-TestSpring/Pods-TestSpring.debug.xcconfig"; sourceTree = "<group>"; };
+		626298509F5CC2EA867C033D /* Pods_TestSpring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestSpring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC35FD0C4D7A4CCFE54F27AE /* Pods-TestSpring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSpring.release.xcconfig"; path = "Target Support Files/Pods-TestSpring/Pods-TestSpring.release.xcconfig"; sourceTree = "<group>"; };
+		EE19DBFA26FB547C00749BFB /* AnimationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSettings.swift; sourceTree = "<group>"; };
 		EEC644EC26FB2BD600D18306 /* TestSpring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSpring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC644EF26FB2BD600D18306 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEC644F126FB2BD600D18306 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +37,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5F1E4F74DE6179ECE83A18B /* Pods_TestSpring.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A794F0B006465BE05C232F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				626298509F5CC2EA867C033D /* Pods_TestSpring.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0D5A18AAEAE3444C7D811BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17D36CEB3AC03850B6A6BB78 /* Pods-TestSpring.debug.xcconfig */,
+				DC35FD0C4D7A4CCFE54F27AE /* Pods-TestSpring.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE19DBF926FB53F200749BFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE19DBFA26FB547C00749BFB /* AnimationSettings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		EEC644E326FB2BD600D18306 = {
 			isa = PBXGroup;
 			children = (
 				EEC644EE26FB2BD600D18306 /* TestSpring */,
 				EEC644ED26FB2BD600D18306 /* Products */,
+				C0D5A18AAEAE3444C7D811BF /* Pods */,
+				7A794F0B006465BE05C232F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +90,48 @@
 		EEC644EE26FB2BD600D18306 /* TestSpring */ = {
 			isa = PBXGroup;
 			children = (
-				EEC644EF26FB2BD600D18306 /* AppDelegate.swift */,
-				EEC644F126FB2BD600D18306 /* SceneDelegate.swift */,
-				EEC644F326FB2BD600D18306 /* ViewController.swift */,
-				EEC644F526FB2BD600D18306 /* Main.storyboard */,
-				EEC644F826FB2BD600D18306 /* Assets.xcassets */,
-				EEC644FA26FB2BD600D18306 /* LaunchScreen.storyboard */,
-				EEC644FD26FB2BD600D18306 /* Info.plist */,
+				EE19DBF926FB53F200749BFB /* Models */,
+				EEC6450426FB2C3800D18306 /* ViewControllers */,
+				EEC6450526FB2C5300D18306 /* Storyboards */,
+				EEC6450326FB2BFF00D18306 /* App */,
+				EEC6450626FB2CA000D18306 /* Resources */,
 			);
 			path = TestSpring;
+			sourceTree = "<group>";
+		};
+		EEC6450326FB2BFF00D18306 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EEC644EF26FB2BD600D18306 /* AppDelegate.swift */,
+				EEC644F126FB2BD600D18306 /* SceneDelegate.swift */,
+				EEC644FD26FB2BD600D18306 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EEC6450426FB2C3800D18306 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEC644F326FB2BD600D18306 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EEC6450526FB2C5300D18306 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EEC644FA26FB2BD600D18306 /* LaunchScreen.storyboard */,
+				EEC644F526FB2BD600D18306 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EEC6450626FB2CA000D18306 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EEC644F826FB2BD600D18306 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EEC6450026FB2BD600D18306 /* Build configuration list for PBXNativeTarget "TestSpring" */;
 			buildPhases = (
+				83FA6EF26A8E29C6BEF4A6A7 /* [CP] Check Pods Manifest.lock */,
 				EEC644E826FB2BD600D18306 /* Sources */,
 				EEC644E926FB2BD600D18306 /* Frameworks */,
 				EEC644EA26FB2BD600D18306 /* Resources */,
+				DBC2A67E6105664D4B5C2A4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +201,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		83FA6EF26A8E29C6BEF4A6A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestSpring-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBC2A67E6105664D4B5C2A4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestSpring/Pods-TestSpring-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestSpring/Pods-TestSpring-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestSpring/Pods-TestSpring-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EEC644E826FB2BD600D18306 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +251,7 @@
 				EEC644F426FB2BD600D18306 /* ViewController.swift in Sources */,
 				EEC644F026FB2BD600D18306 /* AppDelegate.swift in Sources */,
 				EEC644F226FB2BD600D18306 /* SceneDelegate.swift in Sources */,
+				EE19DBFB26FB547C00749BFB /* AnimationSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +395,14 @@
 		};
 		EEC6450126FB2BD600D18306 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17D36CEB3AC03850B6A6BB78 /* Pods-TestSpring.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W783WY8SJ8;
-				INFOPLIST_FILE = TestSpring/Info.plist;
+				INFOPLIST_FILE = TestSpring/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +410,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MaxDuke.TestSpring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		EEC6450226FB2BD600D18306 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC35FD0C4D7A4CCFE54F27AE /* Pods-TestSpring.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W783WY8SJ8;
-				INFOPLIST_FILE = TestSpring/Info.plist;
+				INFOPLIST_FILE = TestSpring/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MaxDuke.TestSpring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
