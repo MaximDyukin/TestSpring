@@ -120,8 +120,8 @@
 		EEC6450526FB2C5300D18306 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				EEC644FA26FB2BD600D18306 /* LaunchScreen.storyboard */,
 				EEC644F526FB2BD600D18306 /* Main.storyboard */,
+				EEC644FA26FB2BD600D18306 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
