@@ -22,8 +22,6 @@ class ViewController: UIViewController {
         
         animationSettings = createAnimationSettings()
         
-        runAnimationButton.setTitle("Run \(animationSettings.animation)", for: .normal)
-        
         animationDescription.text = """
             animation: \(animationSettings.animation)
             curve: \(animationSettings.curve)
@@ -34,6 +32,13 @@ class ViewController: UIViewController {
     
     @IBAction func runAnimation() {
         
+        animationDescription.text = """
+            animation: \(animationSettings.animation)
+            curve: \(animationSettings.curve)
+            force: \(String(format: "%.2f", animationSettings.force))
+            duration: \(String(format: "%.2f", animationSettings.duration))
+        """
+        
         viewWithAnimationDescription.animation = animationSettings.animation
         viewWithAnimationDescription.curve = animationSettings.curve
         viewWithAnimationDescription.force = CGFloat(animationSettings.force)
@@ -43,13 +48,6 @@ class ViewController: UIViewController {
         animationSettings = createAnimationSettings()
         
         runAnimationButton.setTitle("Run \(animationSettings.animation)", for: .normal)
-        
-        animationDescription.text = """
-            animation: \(animationSettings.animation)
-            curve: \(animationSettings.curve)
-            force: \(String(format: "%.2f", animationSettings.force))
-            duration: \(String(format: "%.2f", animationSettings.duration))
-        """
     }
     
     private func createAnimationSettings() -> AnimationSettings {
