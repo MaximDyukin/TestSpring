@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C5F1E4F74DE6179ECE83A18B /* Pods_TestSpring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626298509F5CC2EA867C033D /* Pods_TestSpring.framework */; };
-		EE19DBFB26FB547C00749BFB /* AnimationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19DBFA26FB547C00749BFB /* AnimationSettings.swift */; };
+		EE09CB5A26FF7F6D007A5FAC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09CB5926FF7F6D007A5FAC /* DataManager.swift */; };
+		EE19DBFB26FB547C00749BFB /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19DBFA26FB547C00749BFB /* Animation.swift */; };
 		EEC644F026FB2BD600D18306 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC644EF26FB2BD600D18306 /* AppDelegate.swift */; };
 		EEC644F226FB2BD600D18306 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC644F126FB2BD600D18306 /* SceneDelegate.swift */; };
 		EEC644F426FB2BD600D18306 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC644F326FB2BD600D18306 /* ViewController.swift */; };
@@ -21,7 +22,8 @@
 		17D36CEB3AC03850B6A6BB78 /* Pods-TestSpring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSpring.debug.xcconfig"; path = "Target Support Files/Pods-TestSpring/Pods-TestSpring.debug.xcconfig"; sourceTree = "<group>"; };
 		626298509F5CC2EA867C033D /* Pods_TestSpring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestSpring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC35FD0C4D7A4CCFE54F27AE /* Pods-TestSpring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSpring.release.xcconfig"; path = "Target Support Files/Pods-TestSpring/Pods-TestSpring.release.xcconfig"; sourceTree = "<group>"; };
-		EE19DBFA26FB547C00749BFB /* AnimationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSettings.swift; sourceTree = "<group>"; };
+		EE09CB5926FF7F6D007A5FAC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		EE19DBFA26FB547C00749BFB /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		EEC644EC26FB2BD600D18306 /* TestSpring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSpring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC644EF26FB2BD600D18306 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEC644F126FB2BD600D18306 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,10 +63,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EE09CB5B26FF81C1007A5FAC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EE09CB5926FF7F6D007A5FAC /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		EE19DBF926FB53F200749BFB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EE19DBFA26FB547C00749BFB /* AnimationSettings.swift */,
+				EE19DBFA26FB547C00749BFB /* Animation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -92,6 +102,7 @@
 			children = (
 				EE19DBF926FB53F200749BFB /* Models */,
 				EEC6450426FB2C3800D18306 /* ViewControllers */,
+				EE09CB5B26FF81C1007A5FAC /* Services */,
 				EEC6450526FB2C5300D18306 /* Storyboards */,
 				EEC6450326FB2BFF00D18306 /* App */,
 				EEC6450626FB2CA000D18306 /* Resources */,
@@ -249,9 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEC644F426FB2BD600D18306 /* ViewController.swift in Sources */,
+				EE09CB5A26FF7F6D007A5FAC /* DataManager.swift in Sources */,
 				EEC644F026FB2BD600D18306 /* AppDelegate.swift in Sources */,
 				EEC644F226FB2BD600D18306 /* SceneDelegate.swift in Sources */,
-				EE19DBFB26FB547C00749BFB /* AnimationSettings.swift in Sources */,
+				EE19DBFB26FB547C00749BFB /* Animation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
